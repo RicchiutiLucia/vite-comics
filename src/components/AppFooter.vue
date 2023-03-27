@@ -64,11 +64,11 @@ export default {
                 "DC Power Visa"
             ],
             socials: [
-                "../assets/footer-facebook.png",
-                "../assets/footer-twitter.png",
-                "../assets/footer-youtube.png",
-                "../assets/footer-pinterest.png",
-                "../assets/footer-periscope.png"
+                "footer-facebook.png",
+                "footer-twitter.png",
+                "footer-youtube.png",
+                "footer-pinterest.png",
+                "footer-periscope.png"
             ]
         }
     }
