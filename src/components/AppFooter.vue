@@ -3,33 +3,6 @@ export default {
     name: "AppFooter",
     data() {
         return {
-            items: [
-                {
-                    image: "buy-comics-digital-comics.png",
-                    text: "DIGITAL COMICS",
-                    url: "#"
-                },
-                {
-                    image: "buy-comics-merchandise.png",
-                    text: "DC MERCHANDISE",
-                    url: "#"
-                },
-                {
-                    image: "buy-comics-subscriptions.png",
-                    text: "SUBSCRIPTION",
-                    url: "#"
-                },
-                {
-                    image: "buy-comics-shop-locator.png",
-                    text: "COMIC CHOP LOCATOR",
-                    url: "#"
-                },
-                {
-                    image: "buy-dc-power-visa.svg",
-                    text: "DC POWER VISA",
-                    url: "#"
-                }
-            ],
             comics: [
                 "Characters",
                 "Comics",
@@ -151,11 +124,10 @@ export default {
     </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 footer {
-
-    // SECTION 2 
+    // SECTION 1
     .links {
         background-image: url(../assets/footer-bg.jpg);
         background-size: cover;
@@ -187,9 +159,9 @@ footer {
             }
         }
     }
-    // SECTION 3
+    // SECTION 2
     .sub-footer {
-        height: 90px;
+        height: 80px;
         background-color: #303030;
         .container {
             display: flex;
@@ -197,6 +169,8 @@ footer {
             justify-content: space-between;
             height: 100%;
             .sign-up {
+                font-size: 14px;
+                font-weight: bold;
                 color: #fff;
                 padding: 10px;
                 border: 2px solid $primary;
@@ -209,12 +183,13 @@ footer {
                     align-items: center;
                     li {
                         padding: 0 10px;
-                    }
-                    img{
-                        width: 30px;
+                        width: 50px;
                     }
                 }
                 span {
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding-right: 15px;
                     color: $primary;
                 }
             }

@@ -12,7 +12,7 @@ export default {
 
 <main>
         <div class="container">
-            Content goes here
+                 Content goes here
         </div>
 
     </main>

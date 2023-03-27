@@ -92,7 +92,7 @@ export default {
 
 
 header {
-    height: 95px;
+    height: 90px;
     padding: 10px 0;
     .container{
         display: flex;
