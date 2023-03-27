@@ -86,7 +86,7 @@ export default {
            <section class="merchandise">
             <ul class="container">
                 <li v-for="item in items">
-                    <img :src="getImagePath(`../assets/${image}`)">
+                    <img :src="getImagePath(`../assets/${item.image}`)">
                     <a :href="item.url">{{ item.text }}</a>
                 </li>
             </ul>
@@ -149,7 +149,7 @@ export default {
                     <span>FOLLOW US</span>
                     <ul>
                         <li v-for="social in socials">
-                            <img :src="getImagePath(`../assets/${socials}`)">
+                            <img :src="getImagePath(`../assets/${social}`)">
                         </li>
                     </ul>
                 </div>
@@ -172,19 +172,19 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 40px;
             li {
                 display: flex;
                 align-items: center;
-                padding-inline: 10px;
+                padding: 5px;
             }
             a {
-                padding-left: 5px;
+                padding-left: 10px;
                 font-size: $font-medium;
                 color: $text-white;
             }
             img {
-                height: 50px;
+                width: 50px;
+                
             }
         }
     }
@@ -242,6 +242,9 @@ footer {
                     align-items: center;
                     li {
                         padding: 0 10px;
+                    }
+                    img{
+                        width: 30px;
                     }
                 }
                 span {
