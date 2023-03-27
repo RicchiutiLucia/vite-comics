@@ -82,15 +82,6 @@ export default {
 </script>
 <template>
     <footer>
-           <!-- section 1 -->
-           <section class="merchandise">
-            <ul class="container">
-                <li v-for="item in items">
-                    <img :src="getImagePath(`../assets/${item.image}`)">
-                    <a :href="item.url">{{ item.text }}</a>
-                </li>
-            </ul>
-        </section>
 
         <!-- section 2 -->
         <section class="links">
@@ -163,31 +154,7 @@ export default {
 <style lang="scss">
 @use "../styles/partials/variables" as *;
 footer {
-    // SECTION 1 
-    .merchandise {
-        background-color: $primary;
-        height: 125px;
-        .container {
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            li {
-                display: flex;
-                align-items: center;
-                padding: 5px;
-            }
-            a {
-                padding-left: 10px;
-                font-size: $font-medium;
-                color: $text-white;
-            }
-            img {
-                width: 50px;
-                
-            }
-        }
-    }
+
     // SECTION 2 
     .links {
         background-image: url(../assets/footer-bg.jpg);
