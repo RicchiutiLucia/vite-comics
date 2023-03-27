@@ -213,7 +213,7 @@ footer {
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                background-image: url(../../public/img/dc-logo-bg.png);
+                background-image: url(../assets/dc-logo-bg.png);
                 background-repeat: no-repeat;
                 right: -250px;
                 background-position: 50%;
