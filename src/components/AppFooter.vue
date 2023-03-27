@@ -190,7 +190,7 @@ footer {
     }
     // SECTION 2 
     .links {
-        background-image: url(../../public/img/footer-bg.jpg);
+        background-image: url(../assets/footer-bg.jpg);
         background-size: cover;
         color: $text-white;
         .container {
