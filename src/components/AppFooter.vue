@@ -129,7 +129,7 @@ export default {
 footer {
     // SECTION 1
     .links {
-        background-image: url(../assets/footer-bg.jpg);
+        background-image: url(../public/footer-bg.jpg);
         background-size: cover;
         color: $text-white;
         .container {
@@ -152,7 +152,7 @@ footer {
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                background-image: url(../assets/dc-logo-bg.png);
+                background-image: url(../public/dc-logo-bg.png);
                 background-repeat: no-repeat;
                 right: -250px;
                 background-position: 50%;

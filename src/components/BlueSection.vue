@@ -64,19 +64,25 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+        
         li {
             display: flex;
             align-items: center;
             padding: 10px;
+            &:last-child img{
+            height: 40px;
+            }
+            img {
+            height: 50px;
+            } 
         }
         a {
             padding-left: 10px;
             font-size: $font-medium;
             color: $text-white;
         }
-        img {
-            height: 50px;
-        }
+        
+        
     }
 }
 </style>
