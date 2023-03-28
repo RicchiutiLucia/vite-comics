@@ -91,9 +91,13 @@ export default {
     <main>
         <div class="container">
 
+            <a href="#" class="button current">CURRENT SERIES</a>
+
             <div class="cards">
                 <Card v-for="card in cards" :thumb="card" />
             </div>
+
+            <a href="#" class="button load">LOAD MORE</a>
 
         </div>
     </main>
@@ -107,11 +111,29 @@ main {
     background-color: #1c1c1c;
     .container {
         color: $text-white;
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
         .cards {
             display: flex;
             flex-wrap: wrap;
-            margin-inline: -10px;
-            padding: 50px 0;
+            margin-inline: -15px;
+        }
+        .button {
+            display: inline-block;
+            color: $text-white;
+            background-color: $primary;
+            font-weight: bolder;
+            margin-top: 20px;
+            &.current {
+                padding: 10px 20px;
+                position: absolute;
+                left: 0;
+                top: -40px;
+            }
+            &.load {
+                padding: 10px 40px;
+            }
         }
     }
 }
