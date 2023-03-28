@@ -16,20 +16,21 @@ export default {
 
 <template>
 
-<section>
+    <section>
         <img :src="getImagePath(`../assets/${jumbo}`)">
     </section>
-
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
-
-section img {
-    object-fit: cover;
-    object-position: 20% 0;
+section {
     height: 400px;
-    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 20% 0;
+    }
 }
 
 </style>
